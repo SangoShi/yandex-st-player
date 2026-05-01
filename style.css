@@ -1,0 +1,55 @@
+#st-yandex-container {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#st-yandex-toggle {
+    background: var(--manga-black);
+    border: 1px solid var(--manga-white);
+    color: var(--manga-white);
+    padding: 6px 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 var(--manga-white);
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    transition: all 0.2s;
+}
+
+#st-yandex-toggle:hover {
+    background: var(--manga-white);
+    color: var(--manga-black);
+}
+
+#st-yandex-widget {
+    width: 300px;
+    height: 150px;
+    background: var(--manga-black);
+    border: 1px solid var(--manga-white);
+    box-shadow: 3px 3px 0 var(--manga-white);
+    filter: grayscale(100%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform-origin: top right;
+}
+
+#st-yandex-widget.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+    #st-yandex-container {
+        top: 50px;
+        right: 15px;
+    }
+    #st-yandex-widget {
+        width: calc(100vw - 30px);
+        max-width: 300px;
+    }
+}

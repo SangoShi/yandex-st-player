@@ -1,0 +1,7 @@
+{
+  "display_name": "Yandex Music Player",
+  "identifier": "yandex-st-player",
+  "version": "1.0",
+  "description": "Виджет Яндекс.Музыки для прослушивания треков прямо в Таверне.",
+  "author": "SangoShi"
+}
